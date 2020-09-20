@@ -1,0 +1,400 @@
+<!DOCTYPE HTML>
+<html lang= "es">
+<head>  
+<title>Git y Github </title>
+</head>
+<body>
+	<center> <h1> Git y Github</center></h1>
+	<h2><left>Objetivo del sitio</h2></left>
+
+	<p>Explicar de forma clara y precisa la creacion, uso y seguimiento de repositorios manipulados por medio de un sistema controlador de versiones CSV Git Y conservacion de repositorios en un CSV Github con el fin de trabajar en proyectos de forma colaborativa
+	 </p>
+	 <hr/>
+
+	<h2>Objetivos </h2>
+	<p> * Comprender la realizacion basica de paginas web con html 5 <br><br><br/> <br/>* Reconocer elementos y fundamentos basicos para la realizacion de paginas web y diseño <br><br><br/> <br/>  * Realizar ejercicios colaborativos para el aprendizaje por medio de html </p>
+	  <hr/>
+
+
+	<h2>  Materiales Referencia </h2> 
+	<p>https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup</p>
+	<p>https://www.youtube.com/watch?v=HiXLkL42tMU</p>
+	<p>http://hdl.handle.net/10596/22592</p> <hr/>
+
+
+	<h1><center> Introduccion Git</center></h1>
+
+    
+<p>* Git es un sistema que administra o controla las distintas  versiones de un programa.a lo largo de la evolucion del programa  </p>
+ <p>es una aplicacion openSourse, desarrollado poro linus torvalds para controlar las contribuciones en el kernel de linux </p>
+
+ <p>* detalla un listado de cambios que se hallan realizado en el programa</p>
+
+ <p>* es un sistema de control distribuido: permite la cordinacion con otros usuarios para la alteracion del codigo por medio de copias locales de cada participante, concervacion de cambios y posterior adicion al programa principal en el repositorio remoto o local</p>
+
+ <p>* permite la utilizacion de registros de versiones anterior: Git registra cada linea de codigo y ademas es utilizable en cualquier version del programa </p>
+
+ <p>* ayuda a la reversion de cambios en el programa y control de los usuarios que realizaron cambios</p>
+
+ <p>* Git trabaja con repositorios locales y remotos</p>
+ 
+ <p>* colabora a capturar modificaciones y navegar en los cambios que se realizaron</p>
+ <p>actua directamente sobre el sistema operativo asi que se utilizara la consola (git bash) que posee variadas y algunas mejoradas funcionalidades</p>
+<hr/>
+
+
+ <h1>Estadios de trabajo en Git</h1>
+
+ <p>Una aplicacion administrado por Git pasa por tres estadios: <br> </br>
+
+    * permite trabajar,  seguir las modificaciones <br> </br>
+
+    *  agregar archivos para prepararlos para guardar cambios<br> </br>
+
+    * agregar cambios al repositorio
+</p>
+
+<h2>working directory</h2>
+
+<p>es el area de trabajo donde se trabaja  con la <strong>version local  y demas archivos necesarios para el proyecto
+</strong> </p>
+
+<h2>Staging area</h2>
+
+<p>se agregan todos  los archivos que se pretenden subir al  principal </p>
+
+<h2>repository</h2>
+<p>Cuando los cambios son confirmados, los archivos del staging area se procede a guardar en el repositorio</p>
+<hr/>
+
+<h1><center>Instalacion Git</center></h1>
+
+<ol>
+	
+<h2><li> dirigirse al sitio web</h2> <span style="color: orange";>https://git-scm.com/downloads</span><br></br> 
+	<img src="Camera Roll\1 paso.png"alt="sitio de descarga" title="fotografia page official" width=" 500 px" \>
+		
+
+    <ol><h3>Leer informacion</h3> </ol>
+	<p> seleccionar siguiente </p>
+<img src="Camera Roll\2 paso.png"alt="sitio de descarg title" title=" fotografia page official" width="350 px" \>	
+     <h3><ol>seleccionar Ubicacion de destino</h3></ol>
+	<p>seleccionar ubicacion en el equipo local para la instalacion y configuracion del Git </p>
+	<img src="Camera Roll\3 paso.png"alt="sitio de descarga" title="fotografia page official" width=" 350 px" \>
+
+    <ol><h3>seleccionar componentes</h3> </ol>
+	<p> seleccionar los entornos integrados para windows a instalar con  Git Bash para el repositorio Git </p>
+ <img src="Camera Roll\4 paso.png"alt="sitio de descarga" title="fotografia page official" width=" 350 px" \>
+
+<h3><ol> instalar la carpeta de repositorios Git</ol></h3>
+ <p>elegir la carpeta para almacenar los repositorios Git. lo recomendable es que la instalar por default el almacenamiento de los respositorios </p>
+ <img src="Camera Roll\5 paso.png"alt="sitio de descarga" title="fotografia page official" width=" 350 px" \>
+
+<h3><ol>editor por  default sera usado para Git</ol></h3>
+ <p> seleccionar el editor para desarrollo Unix<strong>Vim Por defecto
+  </strong></p>
+ <img src="Camera Roll\6 paso.png"alt="sitio de descarga" title="fotografia page official" width=" 350 px" \>
+
+
+	<h3><ol> Ajustar la variable <strong>PATH </strong></ol></h3>
+	<P>seleccionar la opcion recomendada "usar la linea de comando por terceros esto evita el desorden en de herramientas ente Unix y microsoft</P>
+<img src="Camera Roll\7 paso.png"alt="sitio de descarga" title="fotografia page official" width=" 350 px" \>
+
+
+<ol><h3> Elegir la biblioteca SSL TLS  para las conexiones HTTPS </ol></h3>
+	<p> seleccionar  la libreria openSSL Library la cual contiene los paquetes unix o usar la libreria nativa de microsoft </p>
+	<img src="Camera Roll\8 paso.png"alt="sitio de descarga" title="fotografia page official" width=" 350 px" \>
+
+<ol><h3>configurar conversion de linea final </h3>  </ol>
+    <p>  seleccionar revisar el estilo de Windows con Unix style </p>
+
+	<img src="Camera Roll\9 paso.png"alt="sitio de descarga" title="fotografia page official" width=" 350 px" \>
+	
+
+<h3><ol>configurar el mulador para el uso con GIT Bash  </ol> </h3>
+<p>usar la terminal<strong> MinTTY </strong> (default terminal of MSYS2) que permite la interaccion no rectangular de la consola y permite la emulacion con winpty de Python con MinTTy de la consola Git</p>
+<img src="Camera Roll\10 paso.png"alt="sitio de descarga" title="fotografia page official" width=" 350 px" \>
+
+<h3><ol>comportamiento de git pull</ol></h3>
+<p>por default margen de avance rapido en cuanto a la creacion del commit</p>
+<img src="Camera Roll\11 paso.png"alt="sitio de descarga" title="fotografia page official" width=" 350 px" \>
+
+<h3><ol>Credenciales git </ol></h3>
+<p> credencial para windows o dada la utilidad  </p>
+<img src="Camera Roll\12 paso.png"alt="sitio de descarga" title="fotografia page official" width=" 350 px" \>
+
+<h3><ol>configuraciones opcionales extra</ol></h3>
+<p>Habilitar guardado de cache en la  una ubicacion dentro del core.fschache del local  </p>
+ <img src="Camera Roll\13 paso.png"alt="sitio de descarga" title="fotografia page official" width=" 350 px" \>
+
+ <h3><ol>configuracion experimental</ol></h3>
+ <p>habilitar segun preferencia psudoconsolas  para python con Git Bach</p>
+ <img src="Camera Roll\14 paso.png" alt="sitio de descarga" title="fotografia page official" width="350 px"\>
+
+
+
+ <h3>  <ol>confirmacion de instalacion de git bach y notas de confirmacion </ol> </h3>
+ <br>
+ <img src="Camera Roll\16 paso.png" alt="sitio de descarga" title="fotografia page official" width="350 px"\>
+
+
+
+<h3> <ol>instalacion con la configuracion determinada</ol></h3>
+ <img src="Camera Roll\15 paso.png" alt="sitio de descarga" title="fotografia page official" width="360 px"\>
+
+<h3><ol>iniciacion de la consola integrada para git en windows</ol> </h3>
+ <img src="Camera Roll\17 paso.png" alt="sitio de descarga" title="fotografia page official" width="360 px"\>
+
+
+<hr/>
+
+<ol>
+<h1>Comandos basicos desde la consola git bash</h1></li>
+<li>corroborar la informacion de entrada a git con el comando  (git)</li>
+
+<img src="imagenes1\1.png" alt="sitio de descarga" title="fotografia page official" width="500 px"\>
+<hr/>
+<br> <br/>
+
+<hr/>
+
+
+<li>configuramos la informacion inicial del nombre y correo electronico  (git)</li>
+
+<img src="imagenes1\2.png" alt="sitio de descarga" title="fotografia page official" width="400 px"\>
+<hr/>
+<br> <br/>
+
+<hr/>
+
+
+<li>configuramos la carpeta local donde va a  alojar el proyecto  (git)</li>
+
+<img src="imagenes1\3.png" alt="sitio de descarga" title="fotografia page official" width="400 px"\>
+<hr/>
+<br> <br/>
+
+
+<li>vamos a inicializar la ubicacion (git init) </li>
+
+<img src="imagenes1\4.png" alt="sitio de descarga" title="fotografia page official" width="400 px"\>
+<hr/>
+<br> <br/>
+
+<li> si estamos seguros del cambio en el  working directory vamos cambiar a la version stating area con el comando (git add planning)  </li>
+<br>
+<br/>
+<img src="imagenes1\5.png" alt="sitio de descarga" title="fotografia page official" width="400 px"\>
+<hr/>
+<br> <br/>
+
+<li> revisamos el estado de la creacion utilizando (git status realizacion del (git commit -m) realizacion del primer commit o toma de commit </li>
+<br>
+<br/>
+<img src="imagenes1\6.png" alt="sitio de descarga" title="fotografia page official" width="400 px"\>
+<hr/>
+<br> <br/>
+
+
+<li> creacion de una rama (git branch login) </li>
+<br>
+<br/>
+<img src="imagenes1\7a.png" alt="sitio de descarga" title="fotografia page official" width="400 px"\>
+<hr/>
+<br> <br/>
+
+
+
+
+
+<li>escribimos el comando (git branch) para observar el estatus de la rama  creada </li>
+<br>
+<br/>
+<img src="imagenes1\7.png" alt="sitio de descarga" title="fotografia page official" width="400 px"\>
+<hr/>
+<br> <br/>
+
+
+
+<li>si queremos borrar una rama  (git branch -d  ("nombre" checkout) </li>
+<br>
+<br/>
+
+
+<img src="imagenes1\25.png" alt="sitio de descarga" title="fotografia page official" width="400 px"\>
+
+<img src="imagenes1\26.png" alt="sitio de descarga" title="fotografia page official" width="400 px"\>
+
+
+<hr/>
+<br> <br/>
+
+
+<li> escribimos el comando (git checkout login ) para realizar el cambio entre la rama principal y la rama master </li>
+<br>
+<br/>
+<img src="imagenes1\8.png" alt="sitio de descarga" title="fotografia page official" width="500 px"\>
+<hr/>
+<br> <br/>
+
+
+
+<li> luego de ello escribimos (git status) para ver el estado del repositorio </li>
+<br>
+<br/>
+<img src="imagenes1\9.png" alt="sitio de descarga" title="fotografia page official" width="500 px"\>
+<p>podemos observar que existen dos elementos a para realizar el commit para agregar el folder de las fotografias y modificar planning/planning.html (git add planning) </p>
+<hr/>
+<br> <br/>
+
+
+<li> luego de ello escribimos (git status) para ver el estado del repositorio </li>
+<br>
+<br/>
+<img src="imagenes1\10.png" alt="sitio de descarga" title="fotografia page official" width="500 px"\>
+<p>podemos observar que existen dos elementos a para realizar el commit para agregar el folder de las fotografias y modificar planning/planning.html (git add planning)   </p>
+
+<hr/>
+
+
+<li> para subir nuestros cambios al repositorio alojado en la nube debemos ingresar el comando (git remote add origin + codigo URL github ) </li>
+<br>
+<br/>
+<img src="imagenes1\27.png" alt="sitio de descarga" title="fotografia page official" width="500 px"\>
+ 
+
+
+<hr/>
+<br><br/>
+<li> <strong>
+<p>cuando deseamos clonar un repositorio que esta en la nube se realiza con (git clone) en este caso vamos a crear otro repositorio fuera de la ruta en este caso codigoplanning planning</strong> </p> 
+</li>
+<img src="imagenes1\11.png" alt="sitio de descarga"  title= "fotografia page official"   \>
+<hr/>
+
+<li> luego realizamos la clonacion (git clone + URL github)  de un repositorio github </li>
+<br>
+<br/>
+<img src="imagenes1\12.png" alt="sitio de descarga" title="fotografia page official" width="500 px"\>
+<p> </p>
+<hr/>
+<br> <br/>
+ 
+ <li> luego de ello  realizamos una validacion dentro del repositorio del folder que contiene el proyecto clonado </li>
+<br>
+<br/>
+<img src="imagenes1\13.png" alt="sitio de descarga" title="fotografia page official" width="900 px" \>
+<p>efectivamente el folder a clonar en este caso fue  DSW_William_Alvarez</p>
+<hr/>
+<br> <br/>
+
+<li> teniendo el proyecto clonado vamos crear una rama (git checkout -b desarrollo)  
+ en este caso la rama se llamara desarrollo    </li>
+<br>
+<br/>
+<img src="imagenes1\14.png" alt="sitio de descarga" title="fotografia page official" width="500 px"\>
+
+<hr/>
+<br> <br/>
+
+
+<hr/>
+<br> <br/>
+
+<li> vamos a pasar del working directory al stating area  (git add .)   </li>
+<br>
+<br/>
+<img src="imagenes1\15.png" alt="sitio de descarga" title="fotografia page official" width="500 px"\>
+
+<hr/>
+<br> <br/>
+
+
+
+
+
+<li><strong> antes de realizar push se ejecuta (git pull origin desarrollo)  </strong>
+<p>se halan los ultimos cambios realizados al master para que se alojen en la  rama desarrollo </p>
+
+
+<br>
+<br/>
+<img src="imagenes1\18.png" alt="sitio de descarga" title="fotografia page official" width="900 px" \>
+<hr/>
+<br> <br/>
+
+
+
+<li> como estamos trabajando con remoto vamos a trabajar con (git push) </li>
+<br>
+<br/>
+<img src="imagenes1\16.png" alt="sitio de descarga" title="fotografia page official" width="500 px"\>
+<br>
+<br>
+<img src="imagenes1\17.png" alt="sitio de descarga" title="fotografia page official" width="500 px"\>
+<p>este comando sirve para guardar cambios en el remoto </p>
+<hr/>
+<br> <br/>
+
+<li> luego realizamos cambios remotos pero sin afectar el local con (git fetch origin desarrollo ) </li>
+<br>
+<br/>
+<img src="imagenes1\19.png" alt="sitio de descarga" title="fotografia page official" width="900 px" \>
+<br>
+<br>
+<p>no aseguramos que tenga los repositorios mas actualizados</p>
+<img src="imagenes1\20.png" alt="sitio de descarga" title="fotografia page official" width="900 px" \>
+
+<hr/>
+<br> <br/>
+
+
+<li> luego con el comando (git branch) observamos las ramas existentes en el proyecto ademas de observar en que ramas estamos realizando los cambios ) </li>
+<br>
+<br/>
+<img src="imagenes1\21.png" alt="sitio de descarga" title="fotografia page official" width="900 px" \>
+<br>
+<br>
+
+<li> teniendo los cambios realizados vamos a realizar la fusion de dos ramas en una   (git merge origin desarrollo) en este caso se fusionaran en forma remota en la nube  </li>
+<br>
+<br/>
+<img src="imagenes1\22.png" alt="sitio de descarga" title="fotografia page official" width="900 px" \>
+<br>
+<br>
+
+
+
+<li> utilizando el comando git diff vamos a observar todos los cambios que se han realizado </li>
+<br>
+<br/>
+<img src="imagenes1\23.png" alt="sitio de descarga" title="fotografia page official" width="900 px" \>
+<p> alli apareceran los cambios y modificaciones realizadas en el commit sobre la rama en la cual se a venido trabajando   </p>
+<br>
+<br>
+
+<li> finalmente vamos a realizar obsevar las ramas utilizaremos (git branch -a) para listar las ramas en el local o remotas y cual es la rama master </li>
+<br>
+<br/>
+<img src="imagenes1\24.png" alt="sitio de descarga" title="fotografia page official" width="900 px" \>
+<br>
+<br>
+
+<hr/>
+<p>normalmente para el desarrollo de una aplicacion  se utiliza un SCV para seguir el control de cambios realizados por los desarrolladores ellos primero  CLONARIAN <br><br\> repositorios para trabajar por modulos entre usuarios en este caso con GIT el desarrollador clona el proyecto en su local<br><br\> el enlace URL sirve para este fin.En este punto se debe crear un branch rama del tronco master en este caso seria desarrollo la cual seria como el nudo donde se desprende la rama despues de esto, vamos a crear nuestra rama para trabajar en ella como working directory en este caso seria: codigoarvey.
+</p>
+<hr/>
+
+<li> mockup para la presentacion de la informacion </li>
+<br>
+<br/>
+<img src="imagenes1\28.png" alt="sitio de descarga" title="fotografia page official" width="900 px" \>
+<br>
+<br>
+
+
+
+<hr/>
+</body>
+</html>
+
